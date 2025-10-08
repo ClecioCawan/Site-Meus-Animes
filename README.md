@@ -10,7 +10,7 @@
 ## 📸 Demonstração
 
 <p align="center">
-  <img src="" alt="Demonstração do Projeto" width="700"/>
+  <img src="assets/img/screen1.png" alt="Demonstração do Projeto" width="700"/>
 </p>
 
 [Site-Meus-Animes](https://site-meus-animes.vercel.app/)
