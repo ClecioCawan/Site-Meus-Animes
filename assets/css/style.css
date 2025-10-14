@@ -14,7 +14,7 @@
    font-family: Arimo, Arial, Helvetica, sans-serif;
    font-size: 16px;
    line-height: 1.75;
-   top:0;   
+   top: 0;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -23,36 +23,39 @@
    color: var(--cor-texto-principal);
 }
 
-body{
+body {
    background-color: var(--cor-fundo-escuro);
 }
 
-.cabecalho{
+.cabecalho {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.menu-navegacao{
+.menu-navegacao {
    display: flex;
    gap: 60px;
    margin-right: 60px;
    list-style: none;
 }
 
-main, header, section, footer{
+main,
+header,
+section,
+footer {
    background-color: var(--cor-fundo);
    max-width: 1400px;
    margin: 0 auto;
 }
 
-header{
+header {
    padding: 2rem;
    border-bottom: #ff3131 3px solid;
    position: sticky;
 }
 
-.menu-navegacao a{
+.menu-navegacao a {
    font-weight: 600;
    font-size: 1.25rem;
    border: 1px solid var(--cor-principal);
@@ -63,51 +66,54 @@ header{
 }
 
 
-#home   {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    padding: 70px;
-    background-color: var(--cor-fundo);
-    border-radius: 10px;
-    margin-bottom: 40px;    
-    height: 100vh;
-    
+#home {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 70px;
+   padding: 70px;
+   background-color: var(--cor-fundo);
+   border-radius: 10px;
+   margin-bottom: 40px;
+   height: 100vh;
+
 }
+
 .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
 }
+
 .destaque {
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--cor-principal);
-    font-weight: 600px;
-    max-width: 600px;
-}
-.home-texto{
-
-    text-align: center;
-    max-width: 600px;
+   text-align: center;
+   font-size: 1.5rem;
+   color: var(--cor-principal);
+   font-weight: 600px;
+   max-width: 600px;
 }
 
-h1{
-    color: var(--cor-texto-principal);
+.home-texto {
+
+   text-align: center;
+   max-width: 600px;
+}
+
+h1 {
+   color: var(--cor-texto-principal);
    font-size: 4.5rem;
    line-height: 1;
-  
+
 }
 
-.img img{
+.img img {
    width: 400px;
    height: auto;
-   
+
 }
 
-.button{
+.button {
    display: flex;
    align-items: center;
    margin-top: 40px;
@@ -123,27 +129,29 @@ h1{
    cursor: pointer;
 }
 
-#sobre{
+#sobre {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 70px;
    padding: 70px;
    border-top: #ff3131 3px solid;
-   margin-bottom: 40px;  
+   margin-bottom: 40px;
    height: 100vh;
 }
-#sobre img{
+
+#sobre img {
    width: 300px;
    height: auto;
    border-radius: 50%;
    box-shadow: 2px 2px 5px black;
 }
-#sobre h1{
+
+#sobre h1 {
    color: var(--cor-principal);
 }
 
-#lista{
+#lista {
    height: 100vh;
    display: flex;
    align-items: center;
@@ -152,26 +160,28 @@ h1{
    padding: 70px;
    border-top: #ff3131 3px solid;
    margin-bottom: 40px;
-   
-   
+
+
 }
 
-#lista img{
+#lista img {
    width: 80%;
    height: auto;
    border-radius: 10px;
    box-shadow: 2px 2px 5px black;
 }
-#lista h1{
+
+#lista h1 {
    color: var(--cor-principal);
 }
-ol{
+
+ol {
    list-style: decimal inside;
    margin-top: 20px;
    margin-bottom: 20px;
 }
 
-#perg{
+#perg {
    height: 100vh;
    display: flex;
    align-items: center;
@@ -182,19 +192,20 @@ ol{
    margin-bottom: 40px;
 }
 
-.box-perg{
+.box-perg {
    display: flex;
    align-items: center;
    gap: 70px;
 }
-#perg img{
+
+#perg img {
    width: 60%;
    height: auto;
    border-radius: 10px;
    box-shadow: 2px 2px 5px black;
 }
 
-#contato{
+#contato {
    height: 100vh;
    display: flex;
    align-items: center;
@@ -204,18 +215,20 @@ ol{
    border-top: #ff3131 3px solid;
    margin-bottom: 40px;
 }
-.box-contato{
+
+.box-contato {
    display: flex;
    align-items: center;
    gap: 70px;
 }
-#contato img{
+
+#contato img {
    width: 30%;
    border-radius: 50%;
    box-shadow: 2px 2px 5px black;
 }
 
-.box-contato form{
+.box-contato form {
    display: flex;
    flex-direction: column;
    gap: 20px;
@@ -224,7 +237,7 @@ ol{
    border-radius: 10px;
 }
 
-footer{
+footer {
    border-top: var(--cor-principal) 3px solid;
    color: white;
    text-align: center;
@@ -233,33 +246,202 @@ footer{
 }
 
 
-@media (max-width: 520px) {
+
+
+/* Adicionando responsividade para os elementos da tela 540px, 960px e 1320px*/
    
-   main, header, section, footer {
-       max-width: 520px;
+
+/* Adicionando responsividade para os elementos da tela 540px, 960px e 1320px*/
+@media (max-width: 540px) {
+   .cabecalho {
+      justify-content: center;
    }
-   #home, #sobre, #lista, #perg, #contato {
-       flex-direction: column;
-       text-align: center;
-       height: auto;
+
+   main,
+   header,
+   section,
+   footer {
+      max-width: 100%;
+      padding: 20px;
    }
 
    .menu-navegacao {
-       flex-direction: column;
-       gap: 20px;
-       margin-right: 0;
+      display: none;
    }
 
-   .img img, #sobre img, #lista img, #perg img, #contato img {
-       width: 80%;
+   #home,
+   #sobre,
+   #lista,
+   #perg,
+   #contato {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 40px 20px;
+      gap: 30px;
+   }
+
+   .logo {
+      width: 100px;
+   }
+
+   .img img {
+      width: 100%;
+      max-width: 300px;
    }
 
    .button {
-       width: 50vw;
+      width: 80%;
+      max-width: 300px;
    }
 
-   .box-perg, .box-contato {
-       flex-direction: column;
-       gap: 20px;
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   .destaque {
+      font-size: 1.2rem;
+   }
+
+   .box-contato form {
+      width: 100%;
+      max-width: 400px;
+   }
+
+   .box-perg {
+      flex-direction: column;
+   }
+
+}
+
+@media (max-width: 960px){
+   .cabecalho {
+      justify-content: center;
+   }
+
+   main,
+   header,
+   section,
+   footer {
+      max-width: 100%;
+      padding: 20px;
+   }
+
+   .menu-navegacao {
+      display: none;
+   }
+
+   #home,
+   #sobre,
+   #lista,
+   #perg,
+   #contato {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 40px 20px;
+      gap: 30px;
+   }
+
+   .logo {
+      width: 100px;
+   }
+
+   .img img {
+      width: 100%;
+      max-width: 300px;
+   }
+
+   .button {
+      width: 80%;
+      max-width: 300px;
+   }
+
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   .destaque {
+      font-size: 1.2rem;
+   }
+
+   .box-contato form {
+      width: 100%;
+      max-width: 400px;
+   }
+
+   .box-perg {
+      flex-direction: column;
+   }
+
+}
+
+@media (max-width: 1320px){
+   
+
+   main,
+   header,
+   section,
+   footer {
+      max-width: 100%;
+      padding: 20px;
+   }
+
+  
+
+   #home,
+   #sobre,
+   #lista,
+   #perg,
+   #contato {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 40px 20px;
+      gap: 30px;
+   }
+
+   .logo {
+      width: 100px;
+   }
+
+   .img img {
+      width: 100%;
+      max-width: 300px;
+   }
+
+   .button {
+      width: 80%;
+      max-width: 300px;
+   }
+
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   .destaque {
+      font-size: 1.2rem;
+   }
+
+   .box-contato form {
+      width: 100%;
+      max-width: 400px;
+   }
+
+   .box-perg {
+      flex-direction: column;
+   }
+
+}
+@media (min-width: 200px) and (max-width: 1400px) {
+   .cabecalho {
+      max-width: 1400px;
+      margin: 0 auto;
    }
 }
